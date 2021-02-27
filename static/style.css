@@ -2,30 +2,30 @@ body {
     background-image: url('twitter.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 1500px;
+    background-attachment: fixed;
     background-size: 100% 100%;
 }
 
 h1 {
     color: Black;
     background-color: gold;
+    font-size: xx-large;
     opacity: 0.6;
     text-align: center;
-    font-size: 40px;
+    width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size-adjust: initial;
 }
 
 h1:hover {
     background-color: rgb(212, 188, 0);
     color: rgb(9, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: xx-large;
 }
 
 input:hover {
     background-color: rgb(179, 176, 176);
-    font-size: 20px;
+    font-size: large;
     border-style: solid;
     border-width: 2px;
     border-radius: 30px;
@@ -39,29 +39,18 @@ form {
     margin-top: 2%;
     width: 25%;
     height: 30%;
-    background: url('galaxy2.png') no-repeat;
+    background-image: url('galaxy2.png');
+    background-repeat: no-repeat;
     opacity: 0.64;
     border-style: double;
     border-color: whitesmoke;
     border-width: 7px;
     border-radius: 50px;
-    font-size: 100px;
+    font-size: xx-large;
 }
 
 form:hover {
     background-color: gold;
-}
-
-form h2 {
-    color: white;
-    font-family: 'Lucida Sans';
-    font-size: 20px;
-    text-align: center;
-}
-
-form h2:hover {
-    color: gray;
-    font-size: 20px;
 }
 
 input {
@@ -70,7 +59,7 @@ input {
     background-color: rgb(247, 247, 247);
     height: 50px;
     color: rgb(94, 92, 92);
-    font-size: 20px;
+    font-size: large;
     margin-top: 4%;
     margin-left: 4%;
     border-style: solid;
@@ -82,10 +71,10 @@ input {
 button {
     position: fixed;
     text-align: center;
-    font-size: 27px;
+    font-size: x-large;
     border-width: 3px;
     border-radius: 24px;
-    margin-top: 2%;
+    margin-top: 8%;
     margin-bottom: 7%;
     margin-left: 9%;
     border-style: ridge;
@@ -102,7 +91,7 @@ button:hover {
 
 p {
     position: fixed;
-    font-size: 35px;
+    font-size: xx-large;
     margin-top: 20%;
     margin-left: 15%;
     color: black;
@@ -113,7 +102,7 @@ p {
 
 footer {
     position: fixed;
-    font-size: 20px;
+    font-size: large;
     margin-top: 39%;
     width: 100%;
     text-align: center;

@@ -11,25 +11,25 @@
            <style>
 
 
-   body{
+    body{
     background-attachment: fixed;
-    background-color: red;
+    background-image: url("{{ url_for('static', filename='galaxy2.png') }}");
     background-repeat: no-repeat;    
-    background-size: 100% 100%;
+    background-size: 140% 140%;
     
-} 
+}
 h1{
     
     top: 0;
     font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
-    background-color:gold;
+    background-color:greenyellow;
     text-align: center;
-    color:lime;
     text-decoration:honeydew;
     text-shadow: wheat;
     width: 100%;
    
+}
 }
 input{
     font-size: large;
@@ -105,7 +105,7 @@ button:active{
        </form>
        
       <div class='infor' style=" margin-top: 10%;">  
-      <p> {{information}} </p><br><br><br>
+          <b> <p> {{information}} </p></b><br><br><br>
  </div>
 
 </center>

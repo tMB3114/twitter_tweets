@@ -11,13 +11,13 @@
            <style>
 
 
-  body{
+  /* body{
     background-attachment: fixed;
     background-image: url('galaxy2.png');
     background-repeat: no-repeat;    
-    background-size: 180% 100%;
+    background-size: 100% 100%;
     
-}
+} */
 h1{
     
     top: 0;
@@ -70,13 +70,13 @@ button:active{
 
 .infor p{
     font-size: medium;
-    color:white;
+    color:black;
     
 }
 .infor p:hover, p:active{
     
     color:blue;
-    font-size: small;
+    font-size: medium;
     
 }
 .footer {
@@ -93,18 +93,19 @@ button:active{
        
         
     </head>
-    <body>
+    <body style="background-image: url('galaxy2.png'); background-attachment: fixed; background-image: url('galaxy2.png');
+    background-repeat: no-repeat;  background-size: 100% 100%;">
     <h1 ><b>वेल्कम टु काले दाइको टुइट पसल</b></h1><br><br><br><br><br>
     <center  >
         
        <form method = 'POST'>
        
-       <input  type = 'text' placeholder = "Enter nepali words" name = 'word'   /><br><br>
+       <input  type = 'text' placeholder = "Enter nepali words"  name = 'word'   /><br><br>
        <button style="margin-top: 7%;"> Search </button>
       
        </form>
        
-      <div class='infor' style=" margin-top: 13%;">  
+      <div class='infor' style=" margin-top: 10%;">  
       <p> {{information}} </p>
  </div>
 

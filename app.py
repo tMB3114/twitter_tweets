@@ -8,6 +8,7 @@ from keras.preprocessing.sequence import pad_sequences
 
 # to read csv file
 data = pd.read_csv('all_final.csv')
+morning = pd.read_csv("morning.csv")
 
 # for random tweet 
 def random_tweet(dataframe):
@@ -55,6 +56,9 @@ def my_for_post():
            
     user_input = str(name).lower()
     word_array = user_input.split()
+    if 'jay_shiva' in word_array:  
+        information = random_tweet(morning)
+        return render_template('home.html', information = information)   
     if 'mamba' in word_array:  
         information = random_tweet(data)
         return render_template('home.html', information = information)   

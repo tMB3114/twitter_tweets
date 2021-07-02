@@ -9,6 +9,8 @@ from keras.preprocessing.sequence import pad_sequences
 # to read csv file
 data = pd.read_csv('all_final.csv')
 morning = pd.read_csv("morning.csv")
+joke = pd.read_csv("joke.csv")
+good = pd.read_csv("good.csv")
 
 # for random tweet 
 def random_tweet(dataframe):
@@ -61,7 +63,13 @@ def my_for_post():
         return render_template('home.html', information = information)   
     if 'mamba' in word_array:  
         information = random_tweet(data)
-        return render_template('home.html', information = information)   
+        return render_template('home.html', information = information)
+    if 'jay_krishna' in word_array:  
+        information = random_tweet(joke)
+        return render_template('home.html', information = information) 
+    if 'abc' in word_array:  
+        information = random_tweet(good)
+        return render_template('home.html', information = information) 
     v = []
     hiss = 0
     for i in range(len(word_array)):
